@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
                 ('time_minutes', models.IntegerField()),
                 ('price', models.DecimalField(decimal_places=2, max_digits=5)),
                 ('link', models.CharField(blank=True, max_length=255)),
-                ('incredients', models.ManyToManyField(to='core.Ingredient')),
+                ('ingredients', models.ManyToManyField(to='core.Ingredient')),
                 ('tags', models.ManyToManyField(to='core.Tag')),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
